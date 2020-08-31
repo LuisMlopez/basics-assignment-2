@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <input type="text"
+             class="form-control"
+             [(ngModel)]="username"
+             placeholder="Username">
+    </div>
+
+    <div class="col-md-12" style="margin-top: 5px;">
+      <div class="alert alert-info">
+        <span>{{ username }}</span>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4 pull-right">
+          <button class="btn btn-default pull-right"
+                  [disabled]="!username"
+                  (click)="onResetUsername()">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
